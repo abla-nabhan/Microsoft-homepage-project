@@ -16,7 +16,6 @@ header .logo {
     height: 20px;
     width: 100px;
     background-size: 100px;
-    background-color: red;
     background-repeat: no-repeat;
     vertical-align: bottom;
 
@@ -126,8 +125,11 @@ HERO STYLES */
 }
 
 .hero-text-container{
-    padding-top: 60vh;
-}
+    padding-top: 40vh;
+    display: inline-block;
+    margin-left: 20%;
+    }
+
 
 .hero-text-container h1{
     margin-bottom: 20px;
@@ -148,19 +150,16 @@ HERO STYLES */
 
 }
 
-.hero-text-container{
-    display: inline-block;
-    margin-left: 20%;
-}
 
 @media (max-width: 786px) {
     .hero {
-        background-image: linear-gradient(to left, black 1%, transparent), url(../img/tablet-image.jpg);
-        height: 60vh;
+        background-image: linear-gradient(to top, black 1%, transparent), url(../img/tablet-image.jpg);
+        height: 80vh;
         text-align: center;
     }
     .hero-text-container{
-        padding:20px;
+        padding-bottom:50px;
+        margin: 0;
     }
     .hero-text-container p{
         min-width: 200px;
