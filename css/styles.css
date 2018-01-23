@@ -167,3 +167,23 @@ HERO STYLES */
     }
 
 }
+
+.product-lineup-container{
+    height: 400px;
+    background: white;
+}
+
+.featured-product-container{
+    height: 400px;
+    background: #999;
+}
+
+.for-work-container{
+    height: 400px;
+    background: white;
+}
+
+footer{
+    height: 400px;
+    background: #999;
+}
