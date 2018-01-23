@@ -1,0 +1,161 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 50px;
+    background: pink;
+}
+
+header .logo {
+    background-image: url('../img/microsoft-logo-(12).svg');
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+
+}
+
+
+
+/* <!-- DESKTOP NAV********************************************************--> */
+
+
+.desktop-nav ul{
+    float: right;
+    margin-top: 10px;
+    padding-left: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+
+}
+.desktop-nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.desktop-nav a,
+.desktop-nav a:visited{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active{
+    opacity: 0.9;
+    text-decoration: none;
+    color: green;
+
+}
+
+.desktop-nav .logo{
+    float: left;
+}
+
+.desktop-nav .left-side li{
+    float: left;
+}
+/* mobile */
+.mobile-nav{
+    display: none;
+    text-align: center;
+}
+
+
+.mobile-nav .logo{
+    display: inline-block;
+}
+
+.mobile-nav .hamburger-container,
+.mobile-nav .cart-container,
+.mobile-nav .search-container{
+    width: 40px;
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.mobile-nav .logo-container{
+    display: inline-block;
+    margin-left: -4px;
+    width: calc(100% - 150px);
+}
+
+.mobile-nav button{
+    background: transparent;
+    border: none;
+    color: black;
+}
+
+.mobile-nav .cart-container,
+.mobile-nav .search-container{
+    float:right;
+    display: inline-block;
+}
+
+@media (max-width: 786px) {
+    .mobile-nav{
+        display: block;
+    }
+    .desktop-nav{
+        display:none;
+    }
+}
+
+/************************************************************
+HERO STYLES */
+
+.hero{
+    /* the minus 80 px is to make room for the header */
+    height: calc(100vh - 50px);
+    background: #999;
+    background-image: url(../img/tablet-image.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text-container{
+    padding-top: 60vh;
+}
+
+.hero-text-container h1{
+    margin-bottom: 20px;
+}
+
+.hero-text-container p{
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.hero-text-container .button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: white;
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 786px) {
+    .hero {
+        background-image: url(../img/tablet-image.jpg.jpg);
+        height: 60vh;
+        text-align: center;
+    }
+    .hero-text-container{
+        padding:20px;
+    }
+    .hero-text-container p{
+        min-width: 200px;
+        text-align: center;
+    }
+
+}
