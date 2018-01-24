@@ -1,5 +1,6 @@
 h1{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
 }
 
 p{
@@ -19,6 +20,11 @@ header .logo {
     background-repeat: no-repeat;
     vertical-align: bottom;
 
+}
+
+a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 
@@ -170,7 +176,79 @@ HERO STYLES */
 
 .product-lineup-container{
     height: 400px;
-    background: white;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    padding-top: 40px;
+}
+.product-1-container{
+    float: left;
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    background-color: white;
+    height: 360px;
+}
+
+.product-1-pic{
+      background-image: url(../img/product-1.jpeg);
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+}
+.product-2-container{
+    float: left;
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    background-color: white;
+    height: 360px;
+}
+
+.product-2-pic{
+      background-image: url(../img/product-2.jpeg);
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+}
+.product-3-container{
+    float:left;
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    background-color: white;
+    height: 360px;
+}
+
+.product-3-pic{
+      background-image: url(../img/product-3.jpg);
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+}
+
+.product-4-container{
+    float:left;
+    width: 25%;
+    background-color: white;
+    height: 360px;
+}
+
+.product-4-pic{
+      background-image: url(../img/product-4.jpeg);
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
 }
 
 .featured-product-container{
