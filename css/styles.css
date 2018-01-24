@@ -1,3 +1,6 @@
+
+/* <!-- GENERAL STYLES*******************************************--> */
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
@@ -31,7 +34,6 @@ a {
 
 /* <!-- DESKTOP NAV********************************************************--> */
 
-
 .desktop-nav ul{
     margin-top: 25px;
     padding-left: 0;
@@ -48,6 +50,7 @@ a {
 .desktop-nav a:visited{
     color: black;
     font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
 }
 
 .desktop-nav a:hover,
@@ -66,7 +69,11 @@ a {
 .desktop-nav .left-side li{
     float: left;
 }
-/* mobile */
+
+
+
+
+/* MOBILE NAV ***************************************************************/
 .mobile-nav{
     display: none;
     text-align: center;
@@ -115,15 +122,17 @@ a {
     }
 }
 
-/************************************************************
-HERO STYLES */
+
+
+
+/* <!-- HERO SECTION******************************************************--> */
 
 .hero{
     /* the minus 80 px is to make room for the header */
     height: calc(100vh - 50px);
     background: #999;
-    background-image: url(../img/tablet-image.jpg);
-    background-image: linear-gradient(to left, black 1%, transparent), url(../img/tablet-image.jpg);
+    background-image: url(../img/hero-pic.jpeg);
+    background-image: linear-gradient(to left, black 1%, transparent), url(../img/hero-pic.jpeg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -159,7 +168,7 @@ HERO STYLES */
 
 @media (max-width: 786px) {
     .hero {
-        background-image: linear-gradient(to top, black 1%, transparent), url(../img/tablet-image.jpg);
+        background-image: linear-gradient(to top, black 1%, transparent), url(../img/hero-pic.jpeg);
         height: 80vh;
         text-align: center;
     }
@@ -174,6 +183,9 @@ HERO STYLES */
 
 }
 
+
+/* <!-- PRODUCT LINEUP SECTION*******************************************--> */
+
 .product-lineup-container{
     height: 400px;
     display: inline-block;
@@ -181,6 +193,7 @@ HERO STYLES */
     width: 100%;
     padding-top: 40px;
 }
+
 .product-1-container{
     float: left;
     width: calc(25% - 10px);
@@ -197,6 +210,7 @@ HERO STYLES */
       background-repeat: no-repeat;
 
 }
+
 .product-2-container{
     float: left;
     width: calc(25% - 10px);
@@ -211,8 +225,8 @@ HERO STYLES */
       width: 100%;
       background-position: center;
       background-repeat: no-repeat;
-
 }
+
 .product-3-container{
     float:left;
     width: calc(25% - 10px);
@@ -227,7 +241,6 @@ HERO STYLES */
       width: 100%;
       background-position: center;
       background-repeat: no-repeat;
-
 }
 
 .product-4-container{
@@ -251,16 +264,56 @@ HERO STYLES */
     clear: both;
 }
 
+
+
+/* <!-- FEATURED PRODUCT SECTION*****************************************--> */
+
 .featured-product-container{
-    height: 400px;
-    background: #999;
+  height: 400px;
+  background: #999;
+  background-image: url(../img/featured-product-pic.jpg);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: left;
 }
+
+.featured-product-text-container{
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+.featured-product-text-container p{
+  max-width: 400px;
+}
+
+.featured-product-text-container .button{
+  padding: 10px;
+  display: block;
+}
+
+.featured-product-text-container .button-1{
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.featured-product-text-container .button-1:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+
+/* <!-- FOR WORK SECTION*************************************************--> */
 
 .for-work-container{
     height: 400px;
     background: white;
 }
 
+
+
+/* <!-- FOOTER***********************************************************--> */
 footer{
     height: 400px;
     background: #999;
