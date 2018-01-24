@@ -114,7 +114,7 @@ a {
     display: inline-block;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 992px) {
     .mobile-nav{
         display: block;
     }
@@ -138,6 +138,7 @@ a {
     background-position: center;
     width: calc(100% - 70px);
     margin-left: 70px;
+    margin-right: 70px;
 }
 
 .hero-text-container{
@@ -170,12 +171,23 @@ a {
 
 }
 
+.mobile-hero-container{
+    height: 200px;
+    width: 100%;
+    background-color: #999;
+    display: none;
+}
 
-@media (max-width: 786px) {
+
+@media (max-width: 992px) {
     .hero {
         background-image: linear-gradient(to top, black 1%, transparent), url(../img/hero-pic.jpeg);
         height: 80vh;
         text-align: center;
+        height: 400px;
+        width: 100%;
+        margin-left: 0;
+        display: block;
     }
     .hero-text-container{
         padding-bottom:50px;
@@ -184,6 +196,10 @@ a {
     .hero-text-container p{
         min-width: 200px;
         text-align: center;
+    }
+    .mobile-hero-container{
+        display: block;
+        padding-top: 50px;
     }
 
 }
