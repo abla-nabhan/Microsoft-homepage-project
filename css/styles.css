@@ -13,6 +13,7 @@ p{
 header{
     height: 50px;
     background: white;
+    padding: 0 70px;
 }
 
 header .logo {
@@ -129,20 +130,24 @@ a {
 
 .hero{
     /* the minus 80 px is to make room for the header */
-    height: calc(100vh - 50px);
+    height: 400px;
     background: #999;
     background-image: url(../img/hero-pic.jpeg);
     background-image: linear-gradient(to left, black 1%, transparent), url(../img/hero-pic.jpeg);
     background-size: cover;
     background-position: center;
-    color: white;
-    text-align: center;
+    width: calc(100% - 70px);
+    margin-left: 70px;
 }
 
 .hero-text-container{
-    padding-top: 40vh;
+    padding-top: 10%;
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 60%;
+    text-align: left;
+    color: white;
+    max-width: 400px;
+
     }
 
 
@@ -192,6 +197,9 @@ a {
     background-color: white;
     width: 100%;
     padding-top: 40px;
+    padding-left:70px;
+    padding-right:70px;
+
 }
 
 .product-1-container{
@@ -272,6 +280,7 @@ a {
   height: 400px;
   background: #999;
   background-image: url(../img/featured-product-pic.jpg);
+  width: calc(100% - 70px);
   background-size: cover;
   background-position: center;
   color: black;
